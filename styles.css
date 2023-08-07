@@ -4,17 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #edeff2;
+  font-family: Roboto;
+}
+
 /* ================================================================ */
 
 /* Nav */
 nav {
   display: flex;
-  width: 100vmax;
+  width: 100%;
   height: 70px;
   align-items: center;
   justify-content: space-around;
-  border-bottom: solid 1px #aaa;
   background-color: #eee;
+  border-bottom: 2px solid var(--gray-blue-grey-blue-95, #d9e0eb);
 }
 
 /* Constructor */
@@ -28,9 +33,10 @@ nav {
 .side-bar-button {
   width: 30px;
   height: 30px;
-  border: 1px solid black;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 100px;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
 
 .side-bar-top {
@@ -40,9 +46,10 @@ nav {
 .side-button-top {
   width: 30px;
   height: 30px;
-  border: 1px solid black;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 100px;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
 
 /* Menu-list-1 */
@@ -57,20 +64,21 @@ nav {
 .menu-nav-button {
   width: 20px;
   height: 20px;
-  border: 1px solid black;
   background-color: white;
-  border-radius: 100%;
   text-align: center;
+  border-radius: 100px;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
 
 /* Search */
 .search {
   width: 250px;
   height: 30px;
-  border: 1px solid black;
   border-radius: 30px;
-  background-color: white;
   text-align: center;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
 
 /* Menu-list-2 */
@@ -85,17 +93,19 @@ nav {
 .nav-icon {
   width: 20px;
   height: 20px;
-  border: 1px solid black;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 100px;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
 
 .nav-button-2 {
   width: 30px;
   height: 30px;
-  border: 1px solid black;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 100px;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
 
 .menu-list-2-mobile {
@@ -113,7 +123,8 @@ nav {
 /* ================================================================ */
 .main {
   display: flex;
-  width: 100vmax;
+  width: 100%;
+  /* height: 100vh; */
 }
 
 /* Side-bar-left */
@@ -123,16 +134,18 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100px;
-  border: solid 1px #aaa;
+  height: auto;
   padding: 25px;
+  border-right: 2px solid var(--gray-blue-grey-blue-95, #d9e0eb);
 }
 
 .menu {
   width: 30px;
   height: 30px;
-  border: 1px solid black;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 100px;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
 
 .menu-top {
@@ -156,16 +169,18 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   flex-grow: 1;
   padding: 20px;
   gap: 20px;
-  overflow: scroll;
+  width: 900px;
+  height: auto;
 }
 
 .main-top {
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 100%;
 }
 
 .top-indicator {
@@ -178,9 +193,10 @@ nav {
 .icon-top {
   width: 20px;
   height: 20px;
-  border: 1px solid black;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 100px;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
 
 .swip-button {
@@ -190,40 +206,41 @@ nav {
 .overview-button {
   width: 100px;
   height: 30px;
-  border: 1px solid black;
-  border-radius: 30px 0% 0% 30px;
-  background-color: white;
   text-align: center;
+  border-radius: 30px 0px 0px 30px;
+  border: 1px solid var(--gray-blue-grey-blue-95, #d9e0eb);
+  background: var(--white-white, #fff);
 }
 
 .products-button {
   width: 100px;
   height: 30px;
-  border: 1px solid black;
-  border-radius: 0% 30px 30px 0%;
-  background-color: white;
   text-align: center;
+  border-radius: 0px 30px 30px 0px;
+  border: 1px solid var(--gray-blue-grey-blue-95, #d9e0eb);
 }
 
 .card-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  width: 900px;
+  width: 100%;
 }
 
 .small-card {
-  border: 1px solid black;
+  height: 160px;
+  background: var(--white-white, #fff);
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
   background-color: white;
   border-radius: 15px;
-  height: 100px;
+  border: 2px solid var(--gray-blue-grey-blue-95, #edeff2);
 }
 
 .big-card {
-  border: 4px solid black;
+  height: 450px;
   background-color: white;
   border-radius: 15px;
-  height: 200px;
+  border: 2px solid var(--gray-blue-grey-blue-95, #edeff2);
 }
 
 .big-1 {
@@ -237,10 +254,11 @@ nav {
 .button-add {
   width: 100px;
   height: 30px;
-  border: 1px solid black;
-  border-radius: 30px;
-  background-color: white;
   text-align: center;
+  border-radius: 30px;
+  border: 2px solid var(--purple-purple, #83f);
+  background: var(--purple-purple, #83f);
+  box-shadow: 0px 10px 30px 0px rgba(136, 51, 255, 0.15);
 }
 
 .chart-box-grid {
@@ -250,15 +268,15 @@ nav {
 .chart-list {
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 100%;
 }
 
 .chart-box {
-  width: 250px;
+  width: 30%;
   height: 300px;
-  border: 1px solid black;
   background-color: white;
   border-radius: 15px;
+  border: 2px solid var(--gray-blue-grey-blue-95, #edeff2);
 }
 
 /* ================================================================ */
@@ -270,40 +288,41 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 400px;
-  border: solid 1px #aaa;
+  height: auto;
   padding: 25px;
   gap: 30px;
+  border-left: 2px solid var(--gray-blue-grey-blue-95, #d9e0eb);
 }
 
 .side-bar-right-box-1 {
   width: 250px;
   height: 150px;
-  border: 1px solid black;
   background-color: white;
   border-radius: 15px;
+  border: 2px solid var(--gray-blue-grey-blue-95, #edeff2);
 }
 
 .side-bar-right-box-2 {
   width: 250px;
   height: 200px;
-  border: 1px solid black;
   background-color: white;
   border-radius: 15px;
+  border: 2px solid var(--gray-blue-grey-blue-95, #edeff2);
 }
 
 /* ================================================================ */
 
 @media (max-width: 1200px) {
-  .constructor > .side-bar-button {
+  /* .constructor > .side-bar-button {
     display: none;
-  }
+  } */
 
-  .constructor > .constructor-text {
+  /* .constructor > .constructor-text {
     position: absolute;
     left: 90px;
-  }
+  } */
 
-  .side-bar-top {
+  /* .side-bar-top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,23 +332,26 @@ nav {
     width: 80px;
     padding: 15px;
     background-color: white;
-  }
+  } */
 
   .search {
     width: 30px;
     height: 30px;
-    border: 1px solid black;
     background-color: white;
     border-radius: 100%;
   }
 
-  .menu-list-2 > .nav-icon,
+  /* .menu-list-2 > .nav-icon,
   .menu-list-2 > .info-text,
   .menu-list-2 > .nav-button-2 {
     display: none;
+  } */
+
+  .menu-list-2 {
+    display: none;
   }
 
-  .left-top {
+  /* .left-top {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -341,10 +363,22 @@ nav {
     right: 0;
     background-color: white;
     font-size: x-large;
+  } */
+
+  .side-bar-left {
+    display: none;
+  }
+
+  .side-bar-right {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .search {
+    display: none;
+  }
+
   .constructor > .side-bar-button {
     display: block;
   }
@@ -357,9 +391,9 @@ nav {
     display: none;
   }
 
-  .menu-list-2 {
+  /* .menu-list-2 {
     display: none;
-  }
+  } */
 
   .menu-list-2-mobile {
     display: flex;
@@ -373,12 +407,19 @@ nav {
     display: none;
   }
 
-  .side-bar-left {
+  /* .side-bar-left {
     display: none;
-  }
+  } */
 
   .main-top {
     width: auto;
+    justify-content: space-around;
+    flex-flow: wrap;
+    gap: 10px;
+  }
+
+  .center-container {
+    align-items: initial;
   }
 
   .card-list {
@@ -407,9 +448,9 @@ nav {
     display: none;
   }
 
-  .side-bar-right {
+  /* .side-bar-right {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 360px) {
