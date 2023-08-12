@@ -334,17 +334,19 @@ nav {
     top: 0;
     left: 0;
     z-index: 2;
+    height: 100%;
   }
 
   .side-bar {
     display: flex;
     justify-content: space-between;
+    height: inherit;
   }
 
   .side-bar-left-2 {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: inherit;
     background-color: white;
     border-right: 2px solid var(--gray-blue-grey-blue-95, #cbd9f0);
   }
@@ -352,7 +354,7 @@ nav {
   .side-bar-right-2 {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: inherit;
     background-color: white;
     border-left: 2px solid var(--gray-blue-grey-blue-95, #cbd9f0);
   }
@@ -371,7 +373,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100px;
-    height: auto;
+    height: inherit;
     padding: 25px;
   }
 
@@ -390,7 +392,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 300px;
-    height: auto;
+    height: inherit;
     padding: 25px;
   }
 
